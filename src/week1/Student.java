@@ -3,6 +3,7 @@ package week1;
 public class Student {
 
     // TODO: khai báo các thuộc tính cho Student
+    Trần Hải Dương
 
     // TODO: khai báo các phương thức getter, setter cho Student
 
