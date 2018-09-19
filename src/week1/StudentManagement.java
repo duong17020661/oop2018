@@ -1,18 +1,18 @@
-package Student;
+package week1;
 
 public class StudentManagement {
 
     // TODO: khai báo thuộc tính students là array chứa các đối tượng thuộc lớp Student (max. 100)
     public static Student[] student = new Student[3];
 
-    public static boolean sameGroup(Student s1, Student s2) {
+    public boolean sameGroup(Student s1, Student s2) {
         // TODO:
         return (s1.getGroup().equals(s2.getGroup()));
 
         //      return false; // xóa dòng này sau khi cài đặt
     }
 
-    static void studentsByGroup() {
+    void studentsByGroup() {
         // TODO:
         System.out.println("\n"+"Danh sach sinh vien lop INT22041:" );
         for(int i=0;i<student.length;i++){
@@ -25,13 +25,16 @@ public class StudentManagement {
         }
     }
 
-    static void removeStudent(String id) {
+    void removeStudent(String id) {
         // TODO:
         int c=0;
         for(int i=0;i<student.length;i++){
             if(!student[i].getId().equals(id)) {
                 student[c]=student[i];
                 c++;
+            }
+            if(student[i].getId()==null) {
+                break;
             }
         }
         for(int i=0;i<c;i++){
@@ -61,7 +64,9 @@ public class StudentManagement {
 
         System.out.println("\n"+"Test 8-10:");
 
-        if(sameGroup(s1,s3)) System.out.println("Cung lop");
+        StudentManagement sv = new StudentManagement();
+
+        if(sv.sameGroup(s1,s3)) System.out.println("Cung lop");
         else System.out.println("Khac lop");
 
         System.out.println("\n"+"Test 11-12:");
@@ -73,10 +78,9 @@ public class StudentManagement {
 //        for(int i=0;i<student.length;i++) {
 //            System.out.println(student[i].getName());
 //        }
-        System.out.println("Test");
-        studentsByGroup();
+        sv.studentsByGroup();
         System.out.println("\n"+"Test 13:");
-        removeStudent("17020000");
+        sv.removeStudent("17020000");
 
 
 

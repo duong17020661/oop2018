@@ -1,4 +1,4 @@
-package Student;
+package week1;
 
 public class Student {
     // TODO: khai báo các thuộc tính cho Student
