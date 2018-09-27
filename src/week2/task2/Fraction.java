@@ -1,6 +1,6 @@
 package week2.task2;
 
-import week2.task2.task1;
+import week2.task2.Task1;
 
 import java.util.Scanner;
 
@@ -38,7 +38,7 @@ public class Fraction {
 
         int m = this.deno*other.deno;
         int t = this.nume*other.deno+this.deno*other.nume;
-        int ucln = task1.gcd(t,m);
+        int ucln = Task1.gcd(t,m);
         Fraction sum = new Fraction(t/ucln,m/ucln);
 
         return sum;
@@ -48,7 +48,7 @@ public class Fraction {
         // TODO: Phương thức trừ hai phân số (this và other), trả về đối tượng Fraction mới
         int m = this.deno*other.deno;
         int t = this.nume*other.deno-this.deno*other.nume;
-        int ucln = task1.gcd(t,m);
+        int ucln = Task1.gcd(t,m);
         Fraction subtract = new Fraction(t/ucln,m/ucln);
 
         return subtract;
@@ -58,7 +58,7 @@ public class Fraction {
         // TODO: Phương thức nhân hai phân số (this và other), trả về đối tượng Fraction mới
         int m = this.deno*other.deno;
         int t = this.nume*other.nume;
-        int ucln = task1.gcd(t,m);
+        int ucln = Task1.gcd(t,m);
         Fraction mul = new Fraction(t/ucln,m/ucln);
 
         return mul;
@@ -68,7 +68,7 @@ public class Fraction {
         // TODO: Phương thức chia hai phân số (this và other), trả về đối tượng Fraction mới
         int m = this.deno*other.nume;
         int t = this.nume*other.deno;
-        int ucln = task1.gcd(t,m);
+        int ucln = Task1.gcd(t,m);
         Fraction div = new Fraction(t/ucln,m/ucln);
 
         return div;
