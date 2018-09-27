@@ -5,12 +5,12 @@ public class Task3 {
 
         // Cầu thủ
 
-        week2.Kicker[] p = new week2.Kicker[5];
-        week2.Kicker p1 = new week2.Kicker("Ozil", "29", "Germany", "Arsenal");
-        week2.Kicker p2 = new week2.Kicker("Torreira", "22", "Uruguay", "Arsenal");
-        week2.Kicker p3 = new week2.Kicker("Aubameyang", "29", "Gabon", "Arsenal");
-        week2.Kicker p4 = new week2.Kicker("Pele", "77", "Brazil", "Retired");
-        week2.Kicker p5 = new week2.Kicker("Maradona", "57", "Argentina", "Retired");
+        Kicker[] p = new Kicker[5];
+        Kicker p1 = new Kicker("Ozil", "29", "Germany", "Arsenal");
+        Kicker p2 = new Kicker("Torreira", "22", "Uruguay", "Arsenal");
+        Kicker p3 = new Kicker("Aubameyang", "29", "Gabon", "Arsenal");
+        Kicker p4 = new Kicker("Pele", "77", "Brazil", "Retired");
+        Kicker p5 = new Kicker("Maradona", "57", "Argentina", "Retired");
 
         p[0] = p1;
         p[1] = p2;
@@ -33,10 +33,10 @@ public class Task3 {
 
         // Trường học của tôi
 
-        week2.mySchool s1 = new week2.mySchool("Ba Dinh", "Thanh Hoa", "Primary School", 1);
-        week2.mySchool s2 = new week2.mySchool("Le Quy Don", "Thanh Hoa", "Secondary School", 3);
-        week2.mySchool s3 = new week2.mySchool("Bim Son", "Thanh Hoa", "High School", 1);
-        week2.mySchool s4 = new week2.mySchool("UET", "Ha Noi", "University", 10);
+        mySchool s1 = new mySchool("Ba Dinh", "Thanh Hoa", "Primary School", 1);
+        mySchool s2 = new mySchool("Le Quy Don", "Thanh Hoa", "Secondary School", 3);
+        mySchool s3 = new mySchool("Bim Son", "Thanh Hoa", "High School", 1);
+        mySchool s4 = new mySchool("UET", "Ha Noi", "University", 10);
 
         s1.schoolInfo(); // thông tin trường học
         System.out.println("\n");
@@ -49,13 +49,13 @@ public class Task3 {
         System.out.println("\n");
         // Bạn bè
 
-        week2.Friends[] f = new week2.Friends[6];
-        week2.Friends f1 = new week2.Friends("Tien Thanh", "19", "Thanh Hoa", "Male");
-        week2.Friends f2 = new week2.Friends("Manh Hung", "21", "Thanh Hoa", "Male");
-        week2.Friends f3 = new week2.Friends("Thanh Tung", "17", "Thanh Hoa", "Male");
-        week2.Friends f4 = new week2.Friends("Viet Cuong", "19", "Hung Yen", "Male");
-        week2.Friends f5 = new week2.Friends("Dang Quynh", "19", "Thanh Hoa", "Female");
-        week2.Friends f6 = new week2.Friends("Chau Anh", "19", "Thanh Hoa", "Female");
+        Friends[] f = new Friends[6];
+        Friends f1 = new Friends("Tien Thanh", "19", "Thanh Hoa", "Male");
+        Friends f2 = new Friends("Manh Hung", "21", "Thanh Hoa", "Male");
+        Friends f3 = new Friends("Thanh Tung", "17", "Thanh Hoa", "Male");
+        Friends f4 = new Friends("Viet Cuong", "19", "Hung Yen", "Male");
+        Friends f5 = new Friends("Dang Quynh", "19", "Thanh Hoa", "Female");
+        Friends f6 = new Friends("Chau Anh", "19", "Thanh Hoa", "Female");
 
         f[0] = f1;
         f[1] = f2;

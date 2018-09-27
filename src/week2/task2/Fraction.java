@@ -1,6 +1,6 @@
 package week2.task2;
 
-import week2.task2.Task1;
+import week2.task1.Task1;
 
 import java.util.Scanner;
 
@@ -28,9 +28,6 @@ public class Fraction {
         // TODO: khởi tạo giá trị cho các thuộc tính numberator (tử số), denominator (mẫu số)
             this.nume=numerator;
             this.deno=denominator;
-    }
-    public Fraction(Objects obj){
-        
     }
 
     public Fraction add(Fraction other) {
