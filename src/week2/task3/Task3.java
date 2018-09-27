@@ -122,7 +122,7 @@ class Kicker{
         return clb;
     }
 
-    public void setClb()  {
+    public void setClb(String clb)  {
         this.clb = clb;
     }
 
