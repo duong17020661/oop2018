@@ -70,11 +70,13 @@ public class Fraction {
 
         return div;
     }
-    public boolean equals(week2.Fraction ps){
+    public boolean equals(Object obj){
+        Fraction ps = (Fraction)obj;
         float x = (float)this.nume/this.deno;
         float y = (float)ps.nume/ps.deno;
         if(x==y) return true;
         else return false;
+       
     }
 
     public static void main(String[] args) {
