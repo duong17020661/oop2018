@@ -32,8 +32,6 @@ public class Task1 {
         System.out.println(gcd(a,b));
         int n;
         n = scanIn.nextInt();
-        for(int i=0;i<n;i++) {
-            System.out.println(fibonacci(i) + " ");
-        }
+            System.out.println(fibonacci(n) + " ");
     }
 }
