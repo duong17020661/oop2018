@@ -1,5 +1,6 @@
 package week3;
 
+
 public class Week3 {
 
     public static int max(int m, int n) {
@@ -31,10 +32,5 @@ public class Week3 {
         else if(bmi>=23&&bmi<25) return "Thừa cân";
         else return "Béo phì";
         // return null;
-    }
-    public static void main (String[] args){
-
-        System.out.println(max(5,6));
-        //  System.out.println(minOfArray(a));
     }
 }
