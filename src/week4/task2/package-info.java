@@ -7,3 +7,11 @@
  * @version 0.1
  */
 package week4.task2;
+    class Main {
+    public static void main(String[] args) {
+        Rectangle a = new Rectangle();
+        Rectangle b = new Rectangle(3,4);
+        Rectangle c = new Rectangle("blue", true, 3,6 );
+        System.out.println(a.getArea());
+    }
+}
