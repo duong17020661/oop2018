@@ -29,6 +29,19 @@ public class Tao extends HoaQua {
     }
 
     /**
+     * Contructor
+     * @param color
+     * @param size
+     * @param price
+     * @param amount
+     */
+    public Tao(String color, int size, int price, int amount) {
+        super(color, size);
+        this.price = price;
+        this.amount = amount;
+    }
+
+    /**
      * Tính giá mua táo
      * @return trả về kiểu int chỉ số tiền phải trả
      */

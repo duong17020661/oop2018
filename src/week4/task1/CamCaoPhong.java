@@ -26,12 +26,28 @@ public class CamCaoPhong extends Cam {
     public void setDate(int date) {
         this.date = date;
     }
+
+    /**
+     * Contructor
+     * @param color
+     * @param size
+     * @param price
+     * @param amount
+     * @param origin
+     * @param date
+     */
+    public CamCaoPhong(String color, int size, int price, int amount, String origin, int date) {
+        super(color, size, price, amount);
+        this.origin = origin;
+        this.date = date;
+    }
+
     /**
      * Xem giá bán có đúng với giá thị trường hay không
      * @return trả về true nếu giá đúng với giá thị trường ngược lại trả về false
      */
 
-    boolean Sanh(){
+    boolean Caophong(){
         if(getPrice()==60) return true;
         else return false;
     }

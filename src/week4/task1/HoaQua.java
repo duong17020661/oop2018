@@ -29,6 +29,16 @@ public class HoaQua{
     }
 
     /**
+     * Constructor
+     * @param color
+     * @param size
+     */
+    public HoaQua(String color, int size) {
+        this.color = color;
+        this.size = size;
+    }
+
+    /**
      *  Xác định xem nó có phải Cam hay không
      * @return Trả về true nếu là quả cam, false nếu không phải
      */

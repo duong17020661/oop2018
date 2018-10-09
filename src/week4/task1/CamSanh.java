@@ -28,6 +28,21 @@ public class CamSanh extends Cam {
     }
 
     /**
+     * Constructor
+     * @param color
+     * @param size
+     * @param price
+     * @param amount
+     * @param origin
+     * @param date
+     */
+    public CamSanh(String color, int size, int price, int amount, String origin, int date) {
+        super(color, size, price, amount);
+        this.origin = origin;
+        this.date = date;
+    }
+
+    /**
      * Xem giá bán có đúng với giá thị trường hay không
      * @return trả về true nếu giá đúng với giá thị trường ngược lại trả về false
      */

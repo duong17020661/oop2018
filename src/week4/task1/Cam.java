@@ -28,6 +28,19 @@ public class Cam extends HoaQua {
     }
 
     /**
+     * Contructor
+     * @param color
+     * @param size
+     * @param price
+     * @param amount
+     */
+    public Cam(String color, int size, int price, int amount) {
+        super(color, size);
+        this.price = price;
+        this.amount = amount;
+    }
+
+    /**
      * Tính giá mua cam
      * @return trả về kiểu int chỉ số tiền phải trả
      */

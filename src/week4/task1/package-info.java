@@ -8,3 +8,13 @@
  */
 package week4.task1;
 
+    class Main{
+        public static void main(String[] args) {
+            HoaQua hoaQua = new HoaQua("Xanh", 10);
+            Cam cam = new Cam("Cam", 10,20, 100);
+            Tao tao = new Tao("Do", 10,30,500);
+            CamCaoPhong caoPhong = new CamCaoPhong("Cam", 12, 50, 1000, "Viet Nam", 10);
+            CamSanh sanh = new CamSanh("Xanh", 11,60,450,"Viet Nam",30);
+            System.out.println(cam.getAmount());
+        }
+        }
