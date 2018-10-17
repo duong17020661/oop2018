@@ -22,12 +22,14 @@ public class Main extends Application {
         Shape1 rectangle1 = new Rectangle1(Color.YELLOW,50,100,50,100);
         Shape1 triangle1 = new Triangle1(Color.GREEN,200,150,100,150,50,50);
         Shape1 square1 = new Square1(Color.RED,300,300,50);
+        Shape1 hexagon = new Hexagon();
         Layer lay = new Layer();
         Diagram dia = new Diagram();
         lay.layer.add(circle1);
         lay.layer.add(rectangle1);
         lay.layer.add(triangle1);
         lay.layer.add(square1);
+        lay.layer.add(hexagon);
         dia.diagram.add(lay);
             Group group = new Group();
             for (int i = 0; i < lay.layer.size(); i++){
