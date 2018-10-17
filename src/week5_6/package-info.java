@@ -3,8 +3,4 @@
  * Đọc yêu cầu đề bài ở week5_6.pdf
  */
 package week5_6;
-class Main{
-    public static void main(String[] args) {
 
-    }
-}
