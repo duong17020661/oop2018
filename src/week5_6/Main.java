@@ -48,7 +48,7 @@ public class Main extends Application {
             primaryStage.setScene(scene);
             primaryStage.show();
             PathTransition pathTransition = new PathTransition();
-            pathTransition.setNode(lay.layer.get(1).draw());
+            pathTransition.setNode(circle);
             pathTransition.setDuration(Duration.seconds(10));
             pathTransition.setPath(polyline);
             pathTransition.setCycleCount(PathTransition.INDEFINITE);
