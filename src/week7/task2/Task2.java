@@ -38,12 +38,16 @@ class classCast {
     }
 }
 class IOE {
-    
+    public static void main(String[] args) throws IOException {
+        File file = new File("java.txt");
+        FileReader fr = new FileReader(file);
+        int c = fr.read();
+        fr.close();
+    }
 }
 class FileNotFound{
     public static void main(String[] args) throws IOException {
-        File file=new File("lines.txt");
-        System.out.println(file.exists());
-        Scanner scan = new Scanner(file);
+        File file = new File("lines.txt");
+        FileReader fr = new FileReader(file);
     }
 }
