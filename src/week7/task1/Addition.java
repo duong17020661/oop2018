@@ -20,7 +20,7 @@ public class Addition extends BinaryExpression {
 
     @Override
     public String toString() {
-        return super.toString();
+        return left.toString()+ "+" + right.toString();
     }
 
     @Override

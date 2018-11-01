@@ -20,11 +20,11 @@ public class Subtraction extends BinaryExpression {
 
     @Override
     public String toString() {
-        return super.toString();
+        return left.toString()+ "-" + right.toString();
     }
 
     @Override
     public int evaluate() {
-        return left.evaluate() - right.evaluate();
+        return left().evaluate() - right().evaluate();
     }
 }

@@ -17,11 +17,11 @@ public class Square extends Expression {
 
     @Override
     public String toString() {
-        return null;
+        return "(" + expression.toString() + ")^2" ;
     }
 
     @Override
     public int evaluate() {
-        return expression.evaluate()*expression.evaluate();
+        return expression.evaluate() * expression.evaluate();
     }
 }

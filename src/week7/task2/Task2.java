@@ -1,53 +1,63 @@
 package week7.task2;
 
 import java.io.*;
-import java.nio.charset.StandardCharsets;
-import java.nio.file.Files;
-import java.nio.file.Paths;
-import java.util.Scanner;
+
 
 public class Task2 {
-}
-class Null{
-
-    public static void main(String[] args) throws NullPointerException{
-        String a = null;
-        System.out.println(a.length());
+    void NullPointer(){
+        try {
+            String a = null;
+            System.out.println(a.length());
+        }catch(NullPointerException e){
+            System.out.println(e);
+        }
     }
-
-    public Null() { }
-}
-class Bound {
-    public static void main(String[] args) {
-        int[] a = new int[5];
-        a[5] = 10;
+    void Bound(){
+        try {
+            int[] a = new int[5];
+            a[5] = 10;
+        }catch (ArrayIndexOutOfBoundsException e){
+            System.out.println(e);
+        }
     }
-
-    public Bound() {
+    void ClassCast(){
+        try {
+            Object n = new Integer(1);
+            String s = (String) n;
+        }catch (ClassCastException e){
+            System.out.println(e);
+        }
     }
-}
-class Arithmetic {
-    public static void main(String[] args) {
-        System.out.println(10/0);
+    void Arithmetic(){
+        try {
+            System.out.println(10 / 0);
+        }catch (ArithmeticException e){
+            System.out.println(e);
+        }
     }
-}
-class classCast {
-    public static void main(String[] args) {
-        Object n = new Null();
-        Bound b = (Bound) n;
+    void IOE() throws IOException{
+        try {
+            throw new IOException("");
+        }catch (IOException e) {
+            System.out.println(e);
+        }
     }
-}
-class IOE {
+    void FileNotFound() throws IOException{
+        try {
+            File file = new File("lines.txt");
+            FileReader fr = new FileReader(file);
+        }catch (FileNotFoundException e){
+            System.out.println(e);
+        }
+    }
     public static void main(String[] args) throws IOException {
-        File file = new File("java.txt");
-        FileReader fr = new FileReader(file);
-        int c = fr.read();
-        fr.close();
-    }
-}
-class FileNotFound{
-    public static void main(String[] args) throws IOException {
-        File file = new File("lines.txt");
-        FileReader fr = new FileReader(file);
+        Task2 task2 = new Task2();
+        task2.NullPointer();
+        task2.Bound();
+        task2.Arithmetic();
+        task2.ClassCast();
+        task2.IOE();
+        task2.FileNotFound();
+
     }
 }
