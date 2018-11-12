@@ -5,6 +5,8 @@ import java.nio.file.Files;
 import java.nio.file.Paths;
 
 public class Utils {
+
+//
     public static String readContentFromFile(String path) throws IOException {
         File file = new File(path);
         FileReader reader = new FileReader(file);
@@ -15,6 +17,8 @@ public class Utils {
         in.close();
         return s;
     }
+
+//
     public static void writeContentToFile(String path) throws IOException {
         File file = new File(path);
         FileWriter writer = new FileWriter(file);
@@ -23,6 +27,8 @@ public class Utils {
         out.println(s);
         out.close();
     }
+
+//
     public static void appendContentToFile(String path) throws IOException {
         File file = new File(path);
         FileWriter writer = new FileWriter(file.getAbsoluteFile(),true);
@@ -31,6 +37,8 @@ public class Utils {
         out.println(s);
         out.close();
     }
+
+//
     public static File findFileByName(String folderPath, String fileName){
         File file = new File(folderPath);
         if (file.exists()) {
@@ -60,6 +68,7 @@ public class Utils {
         return file;
     }
 
+//
     public static void main(String[] args) throws IOException {
 
         String filename1 = "Hawaii.txt";
