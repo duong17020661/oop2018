@@ -39,7 +39,7 @@ public class Task2 {
         task2.CreateArray();
         task2.BubbleSort(task2.a);
         task2.Print();
-       
+
     }
 }
 
